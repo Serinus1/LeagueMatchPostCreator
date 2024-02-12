@@ -176,5 +176,14 @@ namespace LeagueMatchPostCreator
             }
             new frmTeam(Team.AllTeams.First(t => t.LongName == cboTeam2.SelectedValue.ToString())).ShowDialog();
         }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings.LastKnown.Week = (int)nudWeek.Value;
+            Settings.LastKnown.Day = (int)nudDay.Value;
+            Settings.LastKnown.PatchNumber = txtPatchNumber.Text;
+            Settings.LastKnown.PatchNotesUrl = txtPatchNotesUrl.Text;
+            Settings.LastKnown.Save();
+        }
     }
 }

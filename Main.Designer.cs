@@ -293,6 +293,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Main";
             Text = "League Match Post Creator";
+            FormClosing += Main_FormClosing;
             Load += Main_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
