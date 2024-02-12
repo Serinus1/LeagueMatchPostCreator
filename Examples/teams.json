@@ -1,0 +1,58 @@
+[
+  {
+    "League": "LCS",
+    "ShortName": "FLY",
+    "LongName": "FlyQuest",
+    "IconURL": "https://lemmy.world/pictrs/image/26cbbd1f-b7d2-4e10-8988-0d66d928472f.png",
+    "Details": "**Flyquest** | [Leaguepedia](https://lol.fandom.com/wiki/FlyQuest) | [Liquipedia](http://liquipedia.net/leagueoflegends/FlyQuest) | [Website](https://www.flyquest.gg/) | [Twitter](https://twitter.com/FlyQuest) | [Facebook](https://www.facebook.com/FlyQuestSports/) | [YouTube](https://www.youtube.com/channel/UCy0omD6TIJklBme14VQqV6A)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "100T",
+    "LongName": "100 Thieves",
+    "IconURL": "https://lemmy.world/pictrs/image/06f3c575-6e46-4a46-8cf0-8a39cd06df24.png",
+    "Details": "**100 Thieves** | [Leaguepedia](https://lol.fandom.com/wiki/100_Thieves) | [Liquipedia](http://liquipedia.net/leagueoflegends/100_Thieves) | [Website](https://www.100thieves.com) | [Twitter](https://twitter.com/100thieves) | [Facebook](https://www.facebook.com/100Thieves) | [YouTube](https://www.youtube.com/channel/UCnrX2_FoKieobtw19PiphDw)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "TL",
+    "LongName": "Team Liquid",
+    "IconURL": "https://lemmy.world/pictrs/image/6e02b097-809f-4b65-adff-b9277d47e822.png",
+    "Details": "**Team Liquid** | [Leaguepedia](https://lol.fandom.com/wiki/Team_Liquid) | [Liquipedia](http://liquipedia.net/leagueoflegends/Team_Liquid) | [Website](https://www.teamliquid.com/) | [Twitter](https://twitter.com/teamliquidlol) | [Facebook](https://fb.com/teamliquid) | [YouTube](https://www.youtube.com/user/teamliquidnet)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "NRG",
+    "LongName": "NRG",
+    "IconURL": "https://lemmy.world/pictrs/image/5f554d41-4be7-47cf-b1dc-3b81563ceb7f.png",
+    "Details": "**NRG** | [Leaguepedia](https://lol.fandom.com/wiki/NRG) | [Liquipedia](https://liquipedia.net/leagueoflegends/NRG) | [Website](https://www.nrg.gg/) | [Twitter](https://www.twitter.com/NRGLeague) | [Facebook](https://www.facebook.com/lolNRG) | [YouTube](https://www.youtube.com/channel/UCaXjGGAmLX-pn0Zv5wAYg9w)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "C9",
+    "LongName": "Cloud 9",
+    "IconURL": "https://lemmy.world/pictrs/image/74d04cd4-3ddf-46d5-a533-728744c81d61.png",
+    "Details": "**Cloud 9** | [Leaguepedia](https://lol.fandom.com/wiki/Cloud9) | [Liquipedia](http://liquipedia.net/leagueoflegends/Cloud9) | [Website](http://www.cloud9.gg/) | [Twitter](http://twitter.com/c9lol) | [Facebook](https://www.facebook.com/cloud9) | [YouTube](https://www.youtube.com/C9lol)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "DIG",
+    "LongName": "Dignitas",
+    "IconURL": "https://lemmy.world/pictrs/image/429739b4-cb57-4f07-a33a-13420abce8f2.png",
+    "Details": "**Dignitas** | [Leaguepedia](https://lol.fandom.com/wiki/Dignitas) | [Liquipedia](http://liquipedia.net/leagueoflegends/Dignitas) | [Website](http://dignitas.gg) | [Twitter](https://www.twitter.com/Dignitas) | [Facebook](https://www.facebook.com/Dignitas) | [YouTube](https://www.youtube.com/c/DignitasGG)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "SR",
+    "LongName": "Shopify Rebellion",
+    "IconURL": "https://lemmy.world/pictrs/image/c596c9ff-13dc-4c6d-b18c-915e2bb48032.png",
+    "Details": "**Shopify Rebellion** | [Leaguepedia](https://lol.fandom.com/wiki/Shopify_Rebellion) | [Liquipedia](https://liquipedia.net/leagueoflegends/Shopify_Rebellion) | [Website](https://shopifyrebellion.gg/) | [Twitter](https://www.twitter.com/ShopifyRebels) | [YouTube](https://www.youtube.com/channel/UCq5XMp8oz8DXJJEeclcWLcA)"
+  },
+  {
+    "League": "LCS",
+    "ShortName": "IMT",
+    "LongName": "Immortals",
+    "IconURL": "https://lemmy.world/pictrs/image/a455241a-b38d-4cd1-a018-3a7f063e64be.png",
+    "Details": "**Immortals** | [Leaguepedia](https://lol.fandom.com/wiki/Immortals) | [Liquipedia](http://liquipedia.net/leagueoflegends/Immortals) | [Website](https://www.immortals.gg/) | [Twitter](https://www.twitter.com/Immortals) | [Facebook](https://www.facebook.com/Immortalsgg) | [YouTube](https://www.youtube.com/channel/UCHD3WOEBQkbfXvgPgmldT4g)"
+  }
+]
