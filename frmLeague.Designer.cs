@@ -67,14 +67,14 @@
             txtLeagueDetails.Multiline = true;
             txtLeagueDetails.Name = "txtLeagueDetails";
             txtLeagueDetails.Size = new Size(505, 231);
-            txtLeagueDetails.TabIndex = 3;
+            txtLeagueDetails.TabIndex = 4;
             // 
             // btnCancel
             // 
             btnCancel.Location = new Point(358, 318);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 4;
+            btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -83,7 +83,7 @@
             btnSave.Location = new Point(450, 318);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(75, 23);
-            btnSave.TabIndex = 5;
+            btnSave.TabIndex = 8;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;

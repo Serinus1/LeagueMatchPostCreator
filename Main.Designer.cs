@@ -168,7 +168,7 @@
             cboTeam1.Location = new Point(8, 137);
             cboTeam1.Name = "cboTeam1";
             cboTeam1.Size = new Size(150, 23);
-            cboTeam1.TabIndex = 6;
+            cboTeam1.TabIndex = 12;
             cboTeam1.SelectedIndexChanged += cboTeam1_SelectedIndexChanged;
             // 
             // label5
@@ -195,7 +195,7 @@
             cboTeam2.Location = new Point(196, 137);
             cboTeam2.Name = "cboTeam2";
             cboTeam2.Size = new Size(150, 23);
-            cboTeam2.TabIndex = 9;
+            cboTeam2.TabIndex = 14;
             cboTeam2.SelectedIndexChanged += cboTeam2_SelectedIndexChanged;
             // 
             // nudWeek
@@ -203,7 +203,7 @@
             nudWeek.Location = new Point(65, 59);
             nudWeek.Name = "nudWeek";
             nudWeek.Size = new Size(45, 23);
-            nudWeek.TabIndex = 10;
+            nudWeek.TabIndex = 4;
             nudWeek.ValueChanged += nudWeek_ValueChanged;
             // 
             // nudDay
@@ -211,7 +211,7 @@
             nudDay.Location = new Point(161, 59);
             nudDay.Name = "nudDay";
             nudDay.Size = new Size(42, 23);
-            nudDay.TabIndex = 11;
+            nudDay.TabIndex = 6;
             nudDay.ValueChanged += nudDay_ValueChanged;
             // 
             // dtpMatchDate
@@ -219,7 +219,7 @@
             dtpMatchDate.Location = new Point(271, 31);
             dtpMatchDate.Name = "dtpMatchDate";
             dtpMatchDate.Size = new Size(200, 23);
-            dtpMatchDate.TabIndex = 12;
+            dtpMatchDate.TabIndex = 2;
             // 
             // txtMatchPost
             // 
@@ -227,7 +227,7 @@
             txtMatchPost.Multiline = true;
             txtMatchPost.Name = "txtMatchPost";
             txtMatchPost.Size = new Size(944, 381);
-            txtMatchPost.TabIndex = 13;
+            txtMatchPost.TabIndex = 18;
             // 
             // label7
             // 
@@ -252,21 +252,21 @@
             txtPatchNumber.Location = new Point(97, 87);
             txtPatchNumber.Name = "txtPatchNumber";
             txtPatchNumber.Size = new Size(83, 23);
-            txtPatchNumber.TabIndex = 16;
+            txtPatchNumber.TabIndex = 8;
             // 
             // txtPatchNotesUrl
             // 
             txtPatchNotesUrl.Location = new Point(281, 87);
             txtPatchNotesUrl.Name = "txtPatchNotesUrl";
             txtPatchNotesUrl.Size = new Size(409, 23);
-            txtPatchNotesUrl.TabIndex = 17;
+            txtPatchNotesUrl.TabIndex = 10;
             // 
             // txtPostTitle
             // 
             txtPostTitle.Location = new Point(11, 182);
             txtPostTitle.Name = "txtPostTitle";
             txtPostTitle.Size = new Size(469, 23);
-            txtPostTitle.TabIndex = 18;
+            txtPostTitle.TabIndex = 16;
             // 
             // Main
             // 

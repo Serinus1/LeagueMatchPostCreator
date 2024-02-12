@@ -47,7 +47,7 @@
             btnSave.Location = new Point(442, 383);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(75, 23);
-            btnSave.TabIndex = 11;
+            btnSave.TabIndex = 14;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
@@ -57,7 +57,7 @@
             btnCancel.Location = new Point(350, 383);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 10;
+            btnCancel.TabIndex = 12;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -67,14 +67,14 @@
             txtDetails.Multiline = true;
             txtDetails.Name = "txtDetails";
             txtDetails.Size = new Size(505, 231);
-            txtDetails.TabIndex = 9;
+            txtDetails.TabIndex = 10;
             // 
             // txtLongName
             // 
             txtLongName.Location = new Point(114, 37);
             txtLongName.Name = "txtLongName";
             txtLongName.Size = new Size(162, 23);
-            txtLongName.TabIndex = 8;
+            txtLongName.TabIndex = 6;
             // 
             // label2
             // 
@@ -99,7 +99,7 @@
             txtShortName.Location = new Point(114, 11);
             txtShortName.Name = "txtShortName";
             txtShortName.Size = new Size(66, 23);
-            txtShortName.TabIndex = 13;
+            txtShortName.TabIndex = 2;
             // 
             // label3
             // 
@@ -115,7 +115,7 @@
             txtIconUrl.Location = new Point(114, 66);
             txtIconUrl.Name = "txtIconUrl";
             txtIconUrl.Size = new Size(356, 23);
-            txtIconUrl.TabIndex = 15;
+            txtIconUrl.TabIndex = 8;
             // 
             // label4
             // 
@@ -141,7 +141,7 @@
             cboLeague.Location = new Point(236, 11);
             cboLeague.Name = "cboLeague";
             cboLeague.Size = new Size(121, 23);
-            cboLeague.TabIndex = 17;
+            cboLeague.TabIndex = 4;
             // 
             // frmTeam
             // 
