@@ -90,22 +90,36 @@ namespace LeagueMatchPostCreator
 
             if (format == PostFormats.Lemmy)
             {
-                matchpost.Append($"{team1.LongName} vs {team2.LongName})");
+                matchpost.Append($"{team1.LongName} vs {team2.LongName}");
                 matchpost.Append("  ");
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append($"{league.Name} {dtpMatchDate.Value.Year} - Week {nudWeek.Value}, Day {nudDay.Value}");
+                matchpost.Append("  ");
+                matchpost.Append(Environment.NewLine);
                 matchpost.Append(league.Details);
+                matchpost.Append("  ");
+                matchpost.Append(Environment.NewLine);
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append($"[Patch {txtPatchNumber.Text}]({txtPatchNotesUrl.Text})");
+                matchpost.Append("  ");
+                matchpost.Append(Environment.NewLine);
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append("----");
+                matchpost.Append("  ");
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append($"![{team1.LongName}]({team1.IconURL}) vs ![{team2.LongName}]({team2.IconURL})");
+                matchpost.Append("  ");
+                matchpost.Append(Environment.NewLine);
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append(team1.Details);
+                matchpost.Append("  ");
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append(team2.Details);
+                matchpost.Append("  ");
+                matchpost.Append(Environment.NewLine);
+                matchpost.Append(Environment.NewLine);
                 matchpost.Append("---");
+                matchpost.Append("  ");
                 matchpost.Append(Environment.NewLine);
                 matchpost.Append("::: spoiler results");
                 matchpost.Append(Environment.NewLine);
