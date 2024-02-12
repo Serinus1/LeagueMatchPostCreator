@@ -12,7 +12,7 @@ namespace LeagueMatchPostCreator
 {
     public partial class frmTeam : Form
     {
-        Team team;
+        Team team = new Team();
         private frmTeam()
         {
             InitializeComponent();
@@ -26,6 +26,7 @@ namespace LeagueMatchPostCreator
             txtLongName.Text = team.LongName;
             txtIconUrl.Text = team.IconURL;
             txtDetails.Text = team.Details;
+            cboLeague.SelectedValue = team.League;
 
             if (team.ShortName == "NewTeam")
                 txtShortName.ReadOnly = false;
@@ -45,8 +46,21 @@ namespace LeagueMatchPostCreator
             team.LongName = txtLongName.Text;
             team.IconURL = txtIconUrl.Text;
             team.Details = txtDetails.Text;
+            team.League = cboLeague.Text;
 
             Team.SaveAllTeams();
+        }
+
+        private void frmTeam_Load(object sender, EventArgs e)
+        {
+            if (League.AllLeagues.Count == 0)
+            {
+                MessageBox.Show("Please create and save a league before creating a team.");
+                this.Close();
+            }
+            cboLeague.Items.Clear();
+            foreach (League league in League.AllLeagues)
+                cboLeague.Items.Add(league.Name);
         }
     }
 }

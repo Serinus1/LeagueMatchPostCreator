@@ -10,6 +10,7 @@ namespace LeagueMatchPostCreator
     internal class Team
     {
         internal static List<Team> AllTeams = new List<Team>();
+        internal string League { get; set; } = string.Empty;
         internal string ShortName { get; set; } = "NewTeam";
         internal string LongName { get; set; } = "Long Team Name";
         internal string IconURL { get; set; } = "Please provide team icon URL";

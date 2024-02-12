@@ -38,6 +38,8 @@
             label3 = new Label();
             txtIconUrl = new TextBox();
             label4 = new Label();
+            label5 = new Label();
+            cboLeague = new ComboBox();
             SuspendLayout();
             // 
             // btnSave
@@ -124,6 +126,23 @@
             label4.TabIndex = 14;
             label4.Text = "Team Icon URL";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(186, 15);
+            label5.Name = "label5";
+            label5.Size = new Size(45, 15);
+            label5.TabIndex = 16;
+            label5.Text = "League";
+            // 
+            // cboLeague
+            // 
+            cboLeague.FormattingEnabled = true;
+            cboLeague.Location = new Point(236, 11);
+            cboLeague.Name = "cboLeague";
+            cboLeague.Size = new Size(121, 23);
+            cboLeague.TabIndex = 17;
+            // 
             // frmTeam
             // 
             AcceptButton = btnSave;
@@ -131,6 +150,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnCancel;
             ClientSize = new Size(532, 425);
+            Controls.Add(cboLeague);
+            Controls.Add(label5);
             Controls.Add(txtIconUrl);
             Controls.Add(label4);
             Controls.Add(txtShortName);
@@ -143,6 +164,7 @@
             Controls.Add(label1);
             Name = "frmTeam";
             Text = "Add/Edit Team";
+            Load += frmTeam_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -159,5 +181,7 @@
         private Label label3;
         private TextBox txtIconUrl;
         private Label label4;
+        private Label label5;
+        private ComboBox cboLeague;
     }
 }
