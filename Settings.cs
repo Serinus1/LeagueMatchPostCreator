@@ -11,7 +11,11 @@ namespace LeagueMatchPostCreator
     {
         internal static string TeamsFilePath { get; set; } = string.Empty;
         internal static string LeaguesFilePath { get; set; } = string.Empty;
+        public static string GeneralSettingsFilePath { get; internal set; } = string.Empty;
+
         internal static JsonSerializerOptions SerializerOptions = new JsonSerializerOptions();
+
+        public static LastKnownSettings LastKnown;
 
         internal static void InitializeSettings()
         {
@@ -21,9 +25,14 @@ namespace LeagueMatchPostCreator
             Directory.CreateDirectory(settingsDir);
             TeamsFilePath = Path.Combine(settingsDir, "teams.json");
             LeaguesFilePath = Path.Combine(settingsDir, "leagues.json");
+            GeneralSettingsFilePath = Path.Combine(settingsDir, "generalsettings.json");
 
             SerializerOptions.WriteIndented = true;
             SerializerOptions.IncludeFields = true;
+
+            LastKnown = LastKnownSettings.LoadLastKnownSettings();
+            LastKnown.Increment();
         }
+
     }
 }

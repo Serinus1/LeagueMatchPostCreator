@@ -7,17 +7,23 @@ namespace LeagueMatchPostCreator
         public Main()
         {
             InitializeComponent();
-            Settings.InitializeSettings();
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
+            Settings.InitializeSettings();
+
             League.LoadAllLeagues();
             Team.LoadAllTeams();
 
             DisplayLeagues();
             if (cboLeague.SelectedValue?.ToString() != string.Empty)
                 DisplayTeams();
+
+            nudWeek.Value = Settings.LastKnown.Week;
+            nudDay.Value = Settings.LastKnown.Day;
+            txtPatchNumber.Text = Settings.LastKnown.PatchNumber;
+            txtPatchNotesUrl.Text = Settings.LastKnown.PatchNotesUrl;
         }
 
         private void DisplayLeagues()
@@ -66,7 +72,7 @@ namespace LeagueMatchPostCreator
 
         private void DisplayMatchPost()
         {
-            if (cboLeague.SelectedItem?.ToString() == string.Empty || cboTeam1.SelectedItem?.ToString() == string.Empty || cboTeam2.SelectedItem?.ToString() == string.Empty)
+            if (cboLeague.SelectedItem == null || cboTeam1.SelectedItem == null || cboTeam2.SelectedItem == null)
                 return;
 
             League league = League.AllLeagues.First(l => l.Name == cboLeague.SelectedItem?.ToString());
