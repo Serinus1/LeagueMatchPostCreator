@@ -82,7 +82,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { addNewToolStripMenuItem, editToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(806, 24);
+            menuStrip1.Size = new Size(964, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -167,7 +167,7 @@
             cboTeam1.FormattingEnabled = true;
             cboTeam1.Location = new Point(8, 137);
             cboTeam1.Name = "cboTeam1";
-            cboTeam1.Size = new Size(121, 23);
+            cboTeam1.Size = new Size(150, 23);
             cboTeam1.TabIndex = 6;
             cboTeam1.SelectedIndexChanged += cboTeam1_SelectedIndexChanged;
             // 
@@ -194,7 +194,7 @@
             cboTeam2.FormattingEnabled = true;
             cboTeam2.Location = new Point(196, 137);
             cboTeam2.Name = "cboTeam2";
-            cboTeam2.Size = new Size(121, 23);
+            cboTeam2.Size = new Size(150, 23);
             cboTeam2.TabIndex = 9;
             cboTeam2.SelectedIndexChanged += cboTeam2_SelectedIndexChanged;
             // 
@@ -204,6 +204,7 @@
             nudWeek.Name = "nudWeek";
             nudWeek.Size = new Size(45, 23);
             nudWeek.TabIndex = 10;
+            nudWeek.ValueChanged += nudWeek_ValueChanged;
             // 
             // nudDay
             // 
@@ -211,6 +212,7 @@
             nudDay.Name = "nudDay";
             nudDay.Size = new Size(42, 23);
             nudDay.TabIndex = 11;
+            nudDay.ValueChanged += nudDay_ValueChanged;
             // 
             // dtpMatchDate
             // 
@@ -224,7 +226,7 @@
             txtMatchPost.Location = new Point(8, 211);
             txtMatchPost.Multiline = true;
             txtMatchPost.Name = "txtMatchPost";
-            txtMatchPost.Size = new Size(786, 254);
+            txtMatchPost.Size = new Size(944, 381);
             txtMatchPost.TabIndex = 13;
             // 
             // label7
@@ -263,14 +265,14 @@
             // 
             txtPostTitle.Location = new Point(11, 182);
             txtPostTitle.Name = "txtPostTitle";
-            txtPostTitle.Size = new Size(387, 23);
+            txtPostTitle.Size = new Size(469, 23);
             txtPostTitle.TabIndex = 18;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(806, 477);
+            ClientSize = new Size(964, 604);
             Controls.Add(txtPostTitle);
             Controls.Add(txtPatchNotesUrl);
             Controls.Add(txtPatchNumber);

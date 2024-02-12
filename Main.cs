@@ -185,5 +185,15 @@ namespace LeagueMatchPostCreator
             Settings.LastKnown.PatchNotesUrl = txtPatchNotesUrl.Text;
             Settings.LastKnown.Save();
         }
+
+        private void nudWeek_ValueChanged(object sender, EventArgs e)
+        {
+            DisplayMatchPost();
+        }
+
+        private void nudDay_ValueChanged(object sender, EventArgs e)
+        {
+            DisplayMatchPost();
+        }
     }
 }

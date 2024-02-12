@@ -28,14 +28,14 @@ namespace LeagueMatchPostCreator
         {
             LastKnownSettings singleton = new LastKnownSettings();
             if (File.Exists(Settings.GeneralSettingsFilePath))
-                ReadFromFile(singleton);
+                ReadFromFile(ref singleton);
             else
                 singleton.Save();
             return singleton;
 
         }
 
-        private static void ReadFromFile(LastKnownSettings singleton)
+        private static void ReadFromFile(ref LastKnownSettings singleton)
         {
             string jsonString = File.ReadAllText(Settings.GeneralSettingsFilePath);
             LastKnownSettings? deserialized = JsonSerializer.Deserialize<LastKnownSettings>(jsonString);
