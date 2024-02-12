@@ -48,7 +48,10 @@ namespace LeagueMatchPostCreator
             team.Details = txtDetails.Text;
             team.League = cboLeague.Text;
 
+            if (Team.AllTeams.Count(t => t.ShortName == team.ShortName) == 0)
+                Team.AllTeams.Add(team);
             Team.SaveAllTeams();
+            Close();
         }
 
         private void frmTeam_Load(object sender, EventArgs e)

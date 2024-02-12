@@ -32,8 +32,8 @@
             label1 = new Label();
             menuStrip1 = new MenuStrip();
             addNewToolStripMenuItem = new ToolStripMenuItem();
-            leagueToolStripMenuItem = new ToolStripMenuItem();
-            teamToolStripMenuItem = new ToolStripMenuItem();
+            mnuAddLeague = new ToolStripMenuItem();
+            mnuAddTeam = new ToolStripMenuItem();
             editToolStripMenuItem = new ToolStripMenuItem();
             mnuEditLeague = new ToolStripMenuItem();
             mnuEditTeam1 = new ToolStripMenuItem();
@@ -88,22 +88,24 @@
             // 
             // addNewToolStripMenuItem
             // 
-            addNewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { leagueToolStripMenuItem, teamToolStripMenuItem });
+            addNewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mnuAddLeague, mnuAddTeam });
             addNewToolStripMenuItem.Name = "addNewToolStripMenuItem";
             addNewToolStripMenuItem.Size = new Size(68, 20);
             addNewToolStripMenuItem.Text = "Add New";
             // 
-            // leagueToolStripMenuItem
+            // mnuAddLeague
             // 
-            leagueToolStripMenuItem.Name = "leagueToolStripMenuItem";
-            leagueToolStripMenuItem.Size = new Size(112, 22);
-            leagueToolStripMenuItem.Text = "League";
+            mnuAddLeague.Name = "mnuAddLeague";
+            mnuAddLeague.Size = new Size(112, 22);
+            mnuAddLeague.Text = "League";
+            mnuAddLeague.Click += mnuAddLeague_Click;
             // 
-            // teamToolStripMenuItem
+            // mnuAddTeam
             // 
-            teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            teamToolStripMenuItem.Size = new Size(112, 22);
-            teamToolStripMenuItem.Text = "Team";
+            mnuAddTeam.Name = "mnuAddTeam";
+            mnuAddTeam.Size = new Size(112, 22);
+            mnuAddTeam.Text = "Team";
+            mnuAddTeam.Click += mnuAddTeam_Click;
             // 
             // editToolStripMenuItem
             // 
@@ -117,18 +119,21 @@
             mnuEditLeague.Name = "mnuEditLeague";
             mnuEditLeague.Size = new Size(223, 22);
             mnuEditLeague.Text = "League (No league selected)";
+            mnuEditLeague.Click += mnuEditLeague_Click;
             // 
             // mnuEditTeam1
             // 
             mnuEditTeam1.Name = "mnuEditTeam1";
             mnuEditTeam1.Size = new Size(223, 22);
             mnuEditTeam1.Text = "Team 1 (No team selected)";
+            mnuEditTeam1.Click += mnuEditTeam1_Click;
             // 
             // mnuEditTeam2
             // 
             mnuEditTeam2.Name = "mnuEditTeam2";
             mnuEditTeam2.Size = new Size(223, 22);
             mnuEditTeam2.Text = "Team 2 (No team selected)";
+            mnuEditTeam2.Click += mnuEditTeam2_Click;
             // 
             // label2
             // 
@@ -251,7 +256,7 @@
             // 
             txtPatchNotesUrl.Location = new Point(281, 87);
             txtPatchNotesUrl.Name = "txtPatchNotesUrl";
-            txtPatchNotesUrl.Size = new Size(265, 23);
+            txtPatchNotesUrl.Size = new Size(409, 23);
             txtPatchNotesUrl.TabIndex = 17;
             // 
             // txtPostTitle
@@ -303,8 +308,8 @@
         private Label label1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem addNewToolStripMenuItem;
-        private ToolStripMenuItem leagueToolStripMenuItem;
-        private ToolStripMenuItem teamToolStripMenuItem;
+        private ToolStripMenuItem mnuAddLeague;
+        private ToolStripMenuItem mnuAddTeam;
         private ToolStripMenuItem editToolStripMenuItem;
         private ToolStripMenuItem mnuEditLeague;
         private ToolStripMenuItem mnuEditTeam1;

@@ -16,6 +16,7 @@ namespace LeagueMatchPostCreator
         private frmLeague()
         {
             InitializeComponent();
+            league = new League();
         }
         internal frmLeague(League _league)
         {
@@ -39,7 +40,10 @@ namespace LeagueMatchPostCreator
             }
             league.Details = txtLeagueDetails.Text;
             league.Name = txtLeagueName.Text;
+            if (League.AllLeagues.Count(l => l.Name == txtLeagueName.Text) == 0)
+                League.AllLeagues.Add(league);
             League.SaveAllLeagues();
+            this.Close();
         }
     }
 }
